@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
 
-.airbnb--logo{
+
+airbnb--logo{
   padding: 2px;
   width:200px ;
   height: 60px;
@@ -53,6 +57,7 @@ color: #222222;
 }
 .carditem{
   border-radius: 9px;
+  width: 100%;
 }
 .star-rating{
   height: 14px;
@@ -66,9 +71,32 @@ color: #222222;
 }
 .card{
   width: 175px;
+  flex: 0 0 auto;     
+  display: flex;          
+  flex-direction: column; 
+  position: relative;
 }
+
 .card-stats{
   display: flex;
   align-items: center;
 
+}
+.card-list{
+  display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+section{
+  padding: 20px;
+}
+.card-badge{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
