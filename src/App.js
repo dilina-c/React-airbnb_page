@@ -9,13 +9,13 @@ function App() {
   const cardData = data.map((item) => {
     return < Card
       key={item.id}
-      item={item}
+      {...item}
       />
   })
   return (
     <div>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <section className='card-list'>{cardData}</section>
       
 
